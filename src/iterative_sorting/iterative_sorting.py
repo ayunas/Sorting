@@ -1,4 +1,11 @@
 # TO-DO: Complete the selection_sort() function below 
+#TODO all sorting algorithms (insertion sort, selection sort, and bubble sort have been implmeented in JS on a repl.it)
+# URLS:
+# https://repl.it/@ayunas/bubble-sort
+# https://repl.it/@ayunas/Insertion-Sort
+# https://repl.it/@ayunas/Selection-Sort
+# https://repl.it/@ayunas/binary-search-JS
+
 def selection_sort( arr ):
     # loop through n-1 elements
     for i in range(0, len(arr) - 1):
