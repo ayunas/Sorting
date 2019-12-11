@@ -24,9 +24,8 @@ import math
 
 def merge_sort(nums):
 
-    if len(nums) == 1:
+    if len(nums) <= 1:
         return nums
-
 
     print('arr in merge_sort', nums)
     mid = math.floor(len(nums) / 2)
@@ -38,9 +37,6 @@ def merge_sort(nums):
     merge_sort(right)
 
     merge(left,right,nums)
-
-
-   
 
     return nums
 
@@ -71,8 +67,6 @@ def merge(left,right,main):
         r = r + 1
     
     return main
-
-print(merge_sort([5,4,3,2,1,23,4,5]))
 
 # STRETCH: implement an in-place merge sort algorithm
 # def merge_in_place(arr, start, mid, end):
